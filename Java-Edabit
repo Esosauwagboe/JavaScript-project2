@@ -1,0 +1,64 @@
+// function that takes in an array of numbers and returns the sum of its cubes
+function sumOfCubes(arr) {
+  let total = 0;
+  for (let num of arr) {
+    total += num ** 3;
+  }
+  return total;
+}
+
+
+// function that takes an integer minutes and convert to seconds
+function convert(minutes) {
+    return minutes * 60;
+}
+
+
+
+function addUpTo(n) {
+  let total = 0;
+  for (let i = 1; i <= n; i++) {
+    total += i;
+  }
+  return total;
+}
+
+
+// function that takes voltage and current and returns the calculated power.
+function calcPower(voltage, current) {
+    return voltage * current;
+}
+
+
+// function that takes an array containing only numbers and return the first element.
+function getFirstValue(arr) {
+    return arr[0];
+}
+
+
+// function that takes an array of numbers and return "Boom!" if the digit 7 appears in the array. Otherwise, return "there is no 7 in the array".
+ for (let num of arr) {
+    if (num.toString().includes('7')) {
+      return "Boom!";
+    }
+  }
+  return "there is no 7 in the array";
+
+
+ // function that returns the string "something" joined with a space " " and the given argument a. 
+ function giveMeSomething(a) {
+    return "something " + a;
+ }
+
+
+ // function that takes two dates and returns the number of days between the first and second date.
+ const d1 = new Date(date1);
+  const d2 = new Date(date2);
+  const diffTime = Math.abs(d2 - d1); // difference in milliseconds
+  const diffDays = diffTime / (1000 * 60 * 60 * 24);
+  return Math.floor(diffDays);
+
+  // function that takes the base and height of a triangle and return its area.
+  function triArea(base, height) {
+    return base * height / 2;
+  }

@@ -1,3 +1,4 @@
+// A function to reverse a string
 function reverseString(str) {
   return str.split("").reverse().join("");
 }
@@ -5,6 +6,7 @@ function reverseString(str) {
 // console.log(reverseString("hello")); // Output: "olleh"
 
 
+// A function that counts the number of characters in a string
 function countCharacters(str) {
   return str.length;
 }
@@ -12,6 +14,7 @@ function countCharacters(str) {
 // console.log(countCharacters("welcome")); // Output: 7
 
 
+// A function that capitalize the first letter of each word in a sentence
 function capitalizeWords(sentence) {
   return sentence
     .split(" ")
@@ -22,6 +25,8 @@ function capitalizeWords(sentence) {
 // console.log(capitalizeWords("welcome to javascript"));
 // Output: "Welcome To Javascript"
 
+
+// Function to find maximum amd minimum values in an array
 function findMinMax(arr) {
   let min = Math.min(...arr);
   let max = Math.max(...arr);
@@ -34,6 +39,7 @@ function findMinMax(arr) {
 // console.log("Maximum:", result.max); // Output: 9
 
 
+// Function that calculates the sum of a elements in an array
 function sumArray(arr) {
   return arr.reduce((total, num) => total + num, 0);
 }
@@ -42,6 +48,7 @@ function sumArray(arr) {
 // console.log("Sum:", sumArray(numbers)); // Output:24 
 
 
+//Function that filters out arrays
 function filterArray(arr, condition) {
   return arr.filter(condition);
 }
@@ -52,7 +59,8 @@ function filterArray(arr, condition) {
 // console.log(result); // Output: [5, 8, 10]
 
 
-function factorial(n) {
+//Function that calculates the factorial of a given number
+ function factorial(n) {
   if (n === 0 || n === 1) return 1;
   let result = 1;
   for (let i = 2; i <= n; i++) {
@@ -64,6 +72,7 @@ function factorial(n) {
 // console.log(factorial(5)); // Output: 120
 
 
+// Function to check if a number is a prime or not
 function isPrime(n) {
   if (n <= 1) return false;
   for (let i = 2; i <= Math.sqrt(n); i++) {
@@ -76,6 +85,7 @@ console.log(isPrime(7));   // Output: true
 console.log(isPrime(10));  // Output: false
 
 
+// Function a generate a fibonacci sequence
 function fibonacci(n) {
   let sequence = [];
   let a = 0, b = 1;
